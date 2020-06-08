@@ -1,0 +1,10 @@
+{
+    "development": {
+        "AWS_config_region": "us-east-1",
+        "AWS_config_endpoint": "http://localhost:8000"
+    }, 
+    "production": {
+        "AWS_config_region": "us-east-1",
+        "AWS_config_endpoint": "https://dynamodb.us-east-1.amazonaws.com"
+    }
+}

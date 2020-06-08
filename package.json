@@ -1,0 +1,33 @@
+{
+  "name": "npm_bootsonmoon",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "create-db": "cd dynamodb && node createPlayersTable.js && node createPlayersTableArchive.js && cd ..",
+    "load-data": "cd dynamodb && node loadData.js && cd ..",
+    "delete-tables": "cd dynamodb && node deleteTables.js && cd .."
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "aws-sdk": "^2.176.0",
+    "base-64": "^0.1.0",
+    "body-parser": "^1.19.0",
+    "cookie-parser": "^1.4.5",
+    "cookie-session": "^1.4.0",
+    "crypto": "^1.0.1",
+    "dynamodb-model": "0.0.2",
+    "express": "^4.17.1",
+    "express-validator": "^6.4.1",
+    "helmet": "^3.22.0",
+    "pkcs7-padding": "^0.1.1",
+    "pug": "^2.0.4",
+    "random": "^2.2.0",
+    "rijndael-js": "^2.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.3"
+  }
+}

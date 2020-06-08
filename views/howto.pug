@@ -1,0 +1,31 @@
+extends layout
+
+block content   
+  div(id='gameBox', class='container')
+    div(id='gameBoxHeader', class='row')
+      div(id='howto', class='col-sm-3 itemContainer')
+        a(class='behavior ', href='/howto')='How To Work'
+      div(id='title', class='col-sm-5 itemContainer')
+        marquee(class='behavior',behavior="scroll", direction="left")
+          ='Play the Boost On the Moon Game for your chance to win a limited edition prize pack'
+      div(id='leader', class='col-sm-3 itemContainer')
+        a(class='behavior ', href='/leaders')
+          = 'LeaderBoard'
+
+    div(id='gameBoxBody', class='container row')
+      div(id='leftImage', class='sideImageContainer col-sm-2 col-md-3')    
+      div(id='howtoWidget', class='col-mx-12 col-sm-8 col-md-6')      
+        div(id='gameHowTo')  
+          p(style='font-size: 2em')='How To Play'
+          p(style='font-size: 1.1em')='Safely maneuver your character through each level before the time runs out'
+          p(style='font-size: 1.1em')='Cross bottom section of each level by avoiding objects'
+          p(style='font-size: 1.1em')='Cross top section of each level by riding on objects'
+          p(style='font-size: 1.1em')!='<span class="iconMobile"></span> <strong style="color: blue">Mobile:</strong> Move character horizontally or vertically using <strong style="color: red">d-pad</strong> on screen'
+          p(style='font-size: 1.1em')!='<span class="iconDesktop"></span> <strong style="color: blue">Desktop:</strong> Move character horizontally or vertially using arrow <strong style="color: red">or W,A,S,D</strong> keys on keyboard'
+          p(style='font-size: 1.1em')='Collectables'
+          p(style='font-size: 1.1em')='Collect ice cream icons, again extra points'
+          p(style='font-size: 1.1em')='Collect heart icons, gain extra lives'
+          a(class='gameButton', style='padding: 1% 15%;background-color: gray;', href='/')
+            = 'Back up'
+      div(id='rightImage', class='sideImageContainer col-sm-2 col-md-3')
+

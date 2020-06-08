@@ -1,0 +1,37 @@
+[
+    { 
+      "email":"adas@senseintel.com",
+      "first_name" : "Ady",
+      "last_name" : "Das",
+      "username" : "deathstar",
+      "score" : 1211
+    },
+    { 
+        "email":"kspencer@senseintel.com",
+        "first_name" : "Karen",
+        "last_name" : "Spencer",
+        "username" : "luke",
+        "score" : 1100
+    },
+    { 
+        "email":"josh@triggerhouse.com",
+        "first_name" : "Josh",
+        "last_name" : "Sheets",
+        "username" : "Vader",
+        "score" : -1
+    },
+    { 
+        "email":"jonah@kwest.com",
+        "first_name" : "Jonah",
+        "last_name" : "Lovell",
+        "username" : "Obi Wan",
+        "score" : -1
+    },
+    { 
+        "email":"omeed@kwest.com",
+        "first_name" : "Omeed",
+        "last_name" : "Shams",
+        "username" : "Solo",
+        "score" : -1
+    }
+  ]

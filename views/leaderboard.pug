@@ -1,0 +1,51 @@
+extends home
+
+block content 
+  script(src='/js/filter-table.min.js')
+  script.
+    $(function(){
+      $('#contact-table').filterTable('#contact-filter');
+    });
+
+  div(id='gameBox', class='container')
+    div(id='gameBoxHeader', class='row')
+      div(id='howto', class='col-sm-3 itemContainer')
+        a(class='behavior ', href='/howto')
+          ='How To Work'
+      div(id='title', class='col-sm-5')
+        marquee(class='behavior',behavior="scroll", direction="left")
+          ='Play the Boost On the Moon Game for your chance to win a limited edition prize pack'
+      div(id='leader', class='col-sm-3 itemContainer')
+        a(class='behavior ', href='/leaders')
+          = 'LeaderBoard'
+    div(id='gameBoxBody', class='container row')
+      div(id='leftImage', class='sideImageContainer col-sm-2 col-md-3')
+      div(id='leadersWidget', class='col-mx-12 col-sm-8 col-md-6')      
+        div(id='leaderlist', class='container')  
+          div(class='searchBar')
+            p(class='col-7')='Check my Ranking'
+            input(class='col-5', type="text", placeholder="Search Table", id="contact-filter")
+          div(class='leaderListTop')
+            div(class='col-2')
+              img(src="images/SF_Pint.png", alt="")
+            div(class='col-8')  
+              img(src="images/Hills.png", alt="")
+            div(class='col-2')
+              img(src="images/Pint.png", alt="")
+          table(id="contact-table")
+            tr
+              th Place
+              th User Name
+              th Score
+            each n, index in players
+              tr
+                td #{index+1}
+                td #{n.username}
+                td #{n.score}
+        a(class='gameButton', href='/')
+                = 'Back up'        
+      div(id='rightImage', class='sideImageContainer col-sm-2 col-md-3')    
+
+
+    
+  
